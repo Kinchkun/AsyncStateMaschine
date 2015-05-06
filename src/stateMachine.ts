@@ -1,8 +1,20 @@
-class StateMachine {
+import angular = require("../angular");
 
-  public add = (a: number, b: number): number => {
-    return a + b;
+export interface IStateMachineService {
+  create: (definition: IStateMachineDefinition) => StateMachine;
+}
+export interface IStateMachineDefinition { }
+
+
+class StateMachineService implements IStateMachineService { 
+  public create = (definition: IStateMachineService): StateMachine => {
+    return new StateMachine();
   }
 }
 
-export = StateMachine;
+class StateMachine {}
+
+
+angular.module("knStatemachine")
+  .service("knStatemachineService", StateMachineService)
+  ;
