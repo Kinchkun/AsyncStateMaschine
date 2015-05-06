@@ -2,14 +2,15 @@
   "name": "AsyncStateMachine",
   "version": "0.0.0",
   "description": "A state machine approach for dealing with asynchronicity in typescript and angular development ",
-  "repository" :
-  { "type" : "git"
-    , "url" : "https://github.com/Kinchkun/AsyncStateMaschine.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kinchkun/AsyncStateMaschine.git"
   },
   "dependencies": {
     "angular": "^1.3.15"
   },
   "devDependencies": {
-    "jasmine": "^2.3.1"
+    "jasmine": "^2.3.1",
+    "typescript": "^1.5.0-beta"
   }
 }
