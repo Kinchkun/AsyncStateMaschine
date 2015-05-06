@@ -4,3 +4,5 @@ class StateMachine {
     return a + b;
   }
 }
+
+export = StateMachine;
