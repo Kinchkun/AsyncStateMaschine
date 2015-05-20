@@ -9,13 +9,12 @@ TEST_JS_FILES := $(TEST_SRC_FILES:%.ts=%.js)
 # -- Targets --
 
 src/stateMachine.js: $(SRC_FILES)
-	$(TS) --module commonjs $<
 
 tests: $(TEST_JS_FILES) src/stateMachine.js
 	cd tests && node ../node_modules/jasmine/bin/jasmine.js
 
 %.js: %.ts
-	$(TS) --module commonjs $<
+	$(TS) --module commonjs $< 
 
 PHONY: clean
 clean:
